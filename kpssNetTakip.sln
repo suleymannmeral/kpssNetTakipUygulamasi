@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kpssNetTakip", "kpssNetTakip\kpssNetTakip.csproj", "{C1503314-AFFD-41E4-943D-E60E7EFC8786}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "KPSS-Net-Takip", "KPSS-Net-Takip\KPSS-Net-Takip.vdproj", "{F9FCA47E-C873-4A90-A80F-4F4BD0F62AB7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C1503314-AFFD-41E4-943D-E60E7EFC8786}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1503314-AFFD-41E4-943D-E60E7EFC8786}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1503314-AFFD-41E4-943D-E60E7EFC8786}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1503314-AFFD-41E4-943D-E60E7EFC8786}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9FCA47E-C873-4A90-A80F-4F4BD0F62AB7}.Debug|Any CPU.ActiveCfg = Debug
+		{F9FCA47E-C873-4A90-A80F-4F4BD0F62AB7}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2880CE8B-8FD4-493D-9998-1ACD5A920AC1}
+	EndGlobalSection
+EndGlobal

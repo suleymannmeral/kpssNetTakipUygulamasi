@@ -1,0 +1,629 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C1503314-AFFD-41E4-943D-E60E7EFC8786}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>kpssNetTakip</RootNamespace>
+    <AssemblyName>kpssNetTakip</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cografyaGrafik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cografyaGrafik.Designer.cs">
+      <DependentUpon>cografyaGrafik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="countDenemeEBcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="countDenemeEBcs.Designer.cs">
+      <DependentUpon>countDenemeEBcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="database.cs" />
+    <Compile Include="denemeIstatistikDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="denemeIstatistikDetay.Designer.cs">
+      <DependentUpon>denemeIstatistikDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="denemelerimSecim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="denemelerimSecim.Designer.cs">
+      <DependentUpon>denemelerimSecim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="denemeSecimEkranı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="denemeSecimEkranı.Designer.cs">
+      <DependentUpon>denemeSecimEkranı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="egitimBilimleriDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="egitimBilimleriDetay.Designer.cs">
+      <DependentUpon>egitimBilimleriDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEgitimBilimleriIstat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEgitimBilimleriIstat.Designer.cs">
+      <DependentUpon>frmEgitimBilimleriIstat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGelisimPsikoGrafik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGelisimPsikoGrafik.Designer.cs">
+      <DependentUpon>frmGelisimPsikoGrafik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOABT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOABT.Designer.cs">
+      <DependentUpon>frmOABT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmogrPskGraph.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmogrPskGraph.Designer.cs">
+      <DependentUpon>frmogrPskGraph.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOVDgrafik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOVDgrafik.Designer.cs">
+      <DependentUpon>frmOVDgrafik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProgramgelistirmeGraphcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProgramgelistirmeGraphcs.Designer.cs">
+      <DependentUpon>frmProgramgelistirmeGraphcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSureEB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSureEB.Designer.cs">
+      <DependentUpon>frmSureEB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTopLisGrafcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTopLisGrafcs.Designer.cs">
+      <DependentUpon>frmTopLisGrafcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="genelKGrafik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="genelKGrafik.Designer.cs">
+      <DependentUpon>genelKGrafik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="genYGrafik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="genYGrafik.Designer.cs">
+      <DependentUpon>genYGrafik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="grpAlanEgt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="grpAlanEgt.Designer.cs">
+      <DependentUpon>grpAlanEgt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="grpAstr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="grpAstr.Designer.cs">
+      <DependentUpon>grpAstr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="grpBiyoloji.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="grpBiyoloji.Designer.cs">
+      <DependentUpon>grpBiyoloji.cs</DependentUpon>
+    </Compile>
+    <Compile Include="grpCevreBilimi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="grpCevreBilimi.Designer.cs">
+      <DependentUpon>grpCevreBilimi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="grpFizik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="grpFizik.Designer.cs">
+      <DependentUpon>grpFizik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="grpJeoloji.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="grpJeoloji.Designer.cs">
+      <DependentUpon>grpJeoloji.cs</DependentUpon>
+    </Compile>
+    <Compile Include="grpKimya.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="grpKimya.Designer.cs">
+      <DependentUpon>grpKimya.cs</DependentUpon>
+    </Compile>
+    <Compile Include="guncelGrafik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="guncelGrafik.Designer.cs">
+      <DependentUpon>guncelGrafik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="islemSecimForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="islemSecimForm.Designer.cs">
+      <DependentUpon>islemSecimForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kayıtOl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kayıtOl.Designer.cs">
+      <DependentUpon>kayıtOl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kpssNetTakipDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kpssNetTakipDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kpssNetTakipDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kpssNetTakipDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kpssNetTakipDataSet21.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kpssNetTakipDataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kpssNetTakipDataSet31.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kpssNetTakipDataSet31.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kpssNetTakipDataSet41.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kpssNetTakipDataSet41.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kpssNetTakipDataSet51.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kpssNetTakipDataSet51.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kpssNetTakipDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kpssNetTakipDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kpssNetTakipDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kpssNetTakipDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kpssNetTakipDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kpssNetTakipDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="lisanGrafik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lisanGrafik.Designer.cs">
+      <DependentUpon>lisanGrafik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lisansDeneme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lisansDeneme.Designer.cs">
+      <DependentUpon>lisansDeneme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="egitimbimleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="egitimbimleri.Designer.cs">
+      <DependentUpon>egitimbimleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lisansDenemeGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lisansDenemeGiris.Designer.cs">
+      <DependentUpon>lisansDenemeGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lisansDenemeIst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lisansDenemeIst.Designer.cs">
+      <DependentUpon>lisansDenemeIst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="matematikIst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="matematikIst.Designer.cs">
+      <DependentUpon>matematikIst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="oabtCount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="oabtCount.Designer.cs">
+      <DependentUpon>oabtCount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="oabtDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="oabtDetay.Designer.cs">
+      <DependentUpon>oabtDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="oabtIstatistik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="oabtIstatistik.Designer.cs">
+      <DependentUpon>oabtIstatistik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="oabtSure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="oabtSure.Designer.cs">
+      <DependentUpon>oabtSure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="oabtTopOrt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="oabtTopOrt.Designer.cs">
+      <DependentUpon>oabtTopOrt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ortNetgrpEB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ortNetgrpEB.Designer.cs">
+      <DependentUpon>ortNetgrpEB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="oıvyGrafikAnaliz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="oıvyGrafikAnaliz.Designer.cs">
+      <DependentUpon>oıvyGrafikAnaliz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rehberlikGrafikAnaliz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rehberlikGrafikAnaliz.Designer.cs">
+      <DependentUpon>rehberlikGrafikAnaliz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sureGrafik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sureGrafik.Designer.cs">
+      <DependentUpon>sureGrafik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tarihGrafik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tarihGrafik.Designer.cs">
+      <DependentUpon>tarihGrafik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="topOrtLisans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="topOrtLisans.Designer.cs">
+      <DependentUpon>topOrtLisans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vatandsGrafik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vatandsGrafik.Designer.cs">
+      <DependentUpon>vatandsGrafik.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="cografyaGrafik.resx">
+      <DependentUpon>cografyaGrafik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="countDenemeEBcs.resx">
+      <DependentUpon>countDenemeEBcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="denemeIstatistikDetay.resx">
+      <DependentUpon>denemeIstatistikDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="denemelerimSecim.resx">
+      <DependentUpon>denemelerimSecim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="denemeSecimEkranı.resx">
+      <DependentUpon>denemeSecimEkranı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="egitimBilimleriDetay.resx">
+      <DependentUpon>egitimBilimleriDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEgitimBilimleriIstat.resx">
+      <DependentUpon>frmEgitimBilimleriIstat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGelisimPsikoGrafik.resx">
+      <DependentUpon>frmGelisimPsikoGrafik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOABT.resx">
+      <DependentUpon>frmOABT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmogrPskGraph.resx">
+      <DependentUpon>frmogrPskGraph.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOVDgrafik.resx">
+      <DependentUpon>frmOVDgrafik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProgramgelistirmeGraphcs.resx">
+      <DependentUpon>frmProgramgelistirmeGraphcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSureEB.resx">
+      <DependentUpon>frmSureEB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTopLisGrafcs.resx">
+      <DependentUpon>frmTopLisGrafcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="genelKGrafik.resx">
+      <DependentUpon>genelKGrafik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="genYGrafik.resx">
+      <DependentUpon>genYGrafik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="grpAlanEgt.resx">
+      <DependentUpon>grpAlanEgt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="grpAstr.resx">
+      <DependentUpon>grpAstr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="grpBiyoloji.resx">
+      <DependentUpon>grpBiyoloji.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="grpCevreBilimi.resx">
+      <DependentUpon>grpCevreBilimi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="grpFizik.resx">
+      <DependentUpon>grpFizik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="grpJeoloji.resx">
+      <DependentUpon>grpJeoloji.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="grpKimya.resx">
+      <DependentUpon>grpKimya.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="guncelGrafik.resx">
+      <DependentUpon>guncelGrafik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="islemSecimForm.resx">
+      <DependentUpon>islemSecimForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kayıtOl.resx">
+      <DependentUpon>kayıtOl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lisanGrafik.resx">
+      <DependentUpon>lisanGrafik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lisansDeneme.resx">
+      <DependentUpon>lisansDeneme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="egitimbimleri.resx">
+      <DependentUpon>egitimbimleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lisansDenemeGiris.resx">
+      <DependentUpon>lisansDenemeGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lisansDenemeIst.resx">
+      <DependentUpon>lisansDenemeIst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="matematikIst.resx">
+      <DependentUpon>matematikIst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="oabtCount.resx">
+      <DependentUpon>oabtCount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="oabtDetay.resx">
+      <DependentUpon>oabtDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="oabtIstatistik.resx">
+      <DependentUpon>oabtIstatistik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="oabtSure.resx">
+      <DependentUpon>oabtSure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="oabtTopOrt.resx">
+      <DependentUpon>oabtTopOrt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ortNetgrpEB.resx">
+      <DependentUpon>ortNetgrpEB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="oıvyGrafikAnaliz.resx">
+      <DependentUpon>oıvyGrafikAnaliz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="rehberlikGrafikAnaliz.resx">
+      <DependentUpon>rehberlikGrafikAnaliz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sureGrafik.resx">
+      <DependentUpon>sureGrafik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tarihGrafik.resx">
+      <DependentUpon>tarihGrafik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="topOrtLisans.resx">
+      <DependentUpon>topOrtLisans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vatandsGrafik.resx">
+      <DependentUpon>vatandsGrafik.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.manifest" />
+    <None Include="kpssNetTakipDataSet.xsc">
+      <DependentUpon>kpssNetTakipDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="kpssNetTakipDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kpssNetTakipDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kpssNetTakipDataSet.xss">
+      <DependentUpon>kpssNetTakipDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="kpssNetTakipDataSet11.xsc">
+      <DependentUpon>kpssNetTakipDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="kpssNetTakipDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kpssNetTakipDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kpssNetTakipDataSet11.xss">
+      <DependentUpon>kpssNetTakipDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="kpssNetTakipDataSet21.xsc">
+      <DependentUpon>kpssNetTakipDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="kpssNetTakipDataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kpssNetTakipDataSet21.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kpssNetTakipDataSet21.xss">
+      <DependentUpon>kpssNetTakipDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="kpssNetTakipDataSet31.xsc">
+      <DependentUpon>kpssNetTakipDataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="kpssNetTakipDataSet31.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kpssNetTakipDataSet31.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kpssNetTakipDataSet31.xss">
+      <DependentUpon>kpssNetTakipDataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="kpssNetTakipDataSet41.xsc">
+      <DependentUpon>kpssNetTakipDataSet41.xsd</DependentUpon>
+    </None>
+    <None Include="kpssNetTakipDataSet41.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kpssNetTakipDataSet41.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kpssNetTakipDataSet41.xss">
+      <DependentUpon>kpssNetTakipDataSet41.xsd</DependentUpon>
+    </None>
+    <None Include="kpssNetTakipDataSet51.xsc">
+      <DependentUpon>kpssNetTakipDataSet51.xsd</DependentUpon>
+    </None>
+    <None Include="kpssNetTakipDataSet51.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kpssNetTakipDataSet51.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kpssNetTakipDataSet51.xss">
+      <DependentUpon>kpssNetTakipDataSet51.xsd</DependentUpon>
+    </None>
+    <None Include="kpssNetTakipDataSet6.xsc">
+      <DependentUpon>kpssNetTakipDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="kpssNetTakipDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kpssNetTakipDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kpssNetTakipDataSet6.xss">
+      <DependentUpon>kpssNetTakipDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="kpssNetTakipDataSet7.xsc">
+      <DependentUpon>kpssNetTakipDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="kpssNetTakipDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kpssNetTakipDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kpssNetTakipDataSet7.xss">
+      <DependentUpon>kpssNetTakipDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="kpssNetTakipDataSet8.xsc">
+      <DependentUpon>kpssNetTakipDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="kpssNetTakipDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kpssNetTakipDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kpssNetTakipDataSet8.xss">
+      <DependentUpon>kpssNetTakipDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
