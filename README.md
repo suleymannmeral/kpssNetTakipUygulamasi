@@ -20,7 +20,7 @@ Deneme Verilerinizi Girip,Denemelerinizi Görüntüleme işlemi yapabiliyorsunuz
 Projemde C# Ve MSSQL Kullandım. Veritabanı Adresini C diskinde oluşturulan test Adlı Klasörden Çekiyor. Bu sayede sadece localde değil farklı bilgisayarlarda da kullanılabiliyor. 
 ![image](https://github.com/suleymannmeral/kpssNetTakipUygulamasi/assets/115658595/bde1c01c-db4d-49f3-93a8-ab6776be4661)
 
-Proje Hakkında Sorularınız Varsa Linkledn Üzerinden Bana Ulaşabilirsiniz: https://www.linkedin.com/in/s%C3%BCleyman-meral-87241124a/
+Proje Hakkında Sorularınız Varsa Linkledin Üzerinden Bana Ulaşabilirsiniz: https://www.linkedin.com/in/s%C3%BCleyman-meral-87241124a/
 
 
 
